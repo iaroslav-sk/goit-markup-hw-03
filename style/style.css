@@ -45,6 +45,7 @@ body {
 /* ================header========================= */
 .header {
   padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header .container {
   display: flex;
@@ -67,7 +68,6 @@ body {
   /* text */
   font-family: Raleway, cursive;
   font-style: normal;
-  /* в макете стоит 700 !!! */
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -126,19 +126,21 @@ body {
 .address-header .contact:focus {
   color: var(--accent-color);
 }
+
 /* ================hero=========================== */
-.hero .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 200px;
-  padding-right: 252px;
-  padding-bottom: 200px;
-  padding-left: 252px;
+.hero {
   background-color: var(--background-dark-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero .container {
+  /* padding-right: 252px;
+  padding-left: 252px; */
 }
 .hero-titule {
-  max-width: 696px;
+  display: block;
+  margin: 0 auto;
+  min-width: 696px;
   margin-bottom: 30px;
   /* color */
   color: var(--white-text-color);
@@ -153,6 +155,8 @@ body {
   text-transform: uppercase;
 }
 .main-button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
@@ -174,9 +178,12 @@ body {
   text-align: center;
 }
 /* ===================features======================== */
+.section-advantage {
+  padding-top: 94px;
+}
+
 .section-advantage .container {
   display: flex;
-  padding-top: 94px;
 }
 .features-list {
   display: flex;
@@ -205,13 +212,14 @@ body {
   line-height: 1.71;
 }
 /* ===================example-titule=============== */
-
+.example-titule {
+  padding-top: 94px;
+}
 .example-titule .list {
   display: flex;
   justify-content: space-between;
 }
 .example-titule .container {
-  padding-top: 94px;
 }
 
 .example-titule .section-titule {
@@ -220,13 +228,14 @@ body {
   padding-right: 397px;
 }
 /* ===================team======================== */
+.team-titule {
+  padding-top: 188px;
+}
 .team-titule .list {
   display: flex;
   justify-content: space-between;
 }
-.team-titule .container {
-  padding-top: 188px;
-}
+
 .team-list-content {
   padding-top: 30px;
   padding-left: 58px;
@@ -258,12 +267,9 @@ body {
 }
 
 /* ===================footer======================== */
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer {
   background-color: var(--background-dark-color);
 }
 .footer .address {
@@ -299,14 +305,14 @@ body {
 /* ---------------------------------------- */
 /*  */
 /* ===================button-portfolio======================== */
-.section-projects .projects-list {
+.section-projects {
   padding-top: 174px;
+  padding-bottom: 94px;
 }
 .projects-list {
   display: flex;
   justify-content: center;
-}
-.projects-list {
+  padding-bottom: 50px;
 }
 .projects-list .projects-listi-tem:not(:last-child) {
   margin-right: 8px;
@@ -338,9 +344,8 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.works-list {
-  padding-top: 50px;
-  padding-bottom: 94px;
+.works-list-content {
+  border: 1px solid #eeeeee;
 }
 .works-list-items {
   margin-right: 30px;
@@ -352,10 +357,11 @@ body {
 .works-list-items:nth-child(3n) {
   margin-right: 0px;
 }
-.works-list-content .titule {
-}
 .works-list .titule {
   padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 4px;
+  padding-left: 20px;
   /* color */
   color: var(--titule-text-color);
   /* text */
@@ -365,7 +371,9 @@ body {
   letter-spacing: 0.06em;
 }
 .works-list .text {
-  padding-top: 4px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   /* color */
   color: var(--primary-text-color);
   /* text */
