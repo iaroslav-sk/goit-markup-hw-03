@@ -219,13 +219,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.example-titule .container {
-}
 
 .example-titule .section-titule {
-  padding-left: 397px;
   padding-bottom: 50px;
-  padding-right: 397px;
 }
 /* ===================team======================== */
 .team-titule {
