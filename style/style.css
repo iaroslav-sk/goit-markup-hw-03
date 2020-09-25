@@ -25,6 +25,15 @@
 img {
   display: block;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 /* ================body=========================== */
 body {
   /* color */
@@ -300,7 +309,7 @@ body {
 /* -------------portfolio ------------------*/
 /* ---------------------------------------- */
 /*  */
-/* ===================button-portfolio======================== */
+/* ===================button-portfolio======= */
 .section-projects {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -330,7 +339,7 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-/* ===================projects-filtre======================== */
+/* ===================projects-filtre==================== */
 .projects-list .all {
   color: var(--white-text-color);
   background-color: var(--accent-color);
